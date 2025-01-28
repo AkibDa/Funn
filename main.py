@@ -42,17 +42,17 @@ for question in questions:
   else:
     print("Choose between A to G")
 
-if(c>r or c>b or c>a or c>e or c>s or c>j):
+if(c>r and c>b and c>a and c>e and c>s and c>j):
   print(f"{name} is Cinderella: Focuses on hope, kindness, and resilience.")
-elif(r>c or r>b or r>a or r>e or r>s or r>j):
+elif(r>c and r>b and r>a and r>e and r>s and r>j):
   print(f"{name} is Rapunzel: Creative, adventurous, and curious.")
-elif(b>c or b>r or b>a or b>e or b>s or b>j):
+elif(b>c and b>r and b>a and b>e and b>s and b>j):
   print(f"{name} is Belle: Intellectual and values inner beauty.")
-elif(a>c or a>r or a>b or a>e or a>s or a>j):
+elif(a>c and a>r and a>b and a>e and a>s and a>j):
   print(f"{name} is Aurora: Dreamy, graceful, and calm.")
-elif(e>c or e>r or e>b or e>a or e>s or e>j):
+elif(e>c and e>r and e>b and e>a and e>s and e>j):
   print(f"{name} is Elsa: Self-reflective, independent, and emotional.")
-elif(s>c or s>r or s>b or s>a or s>e or s>j):
+elif(s>c and s>r and s>b and s>a and s>e and s>j):
   print(f"{name} is Snow White: Cheerful, nurturing, and optimistic.")
 else:
   print(f"{name} is Jasmine: Bold, independent, and justice-seeking.")
