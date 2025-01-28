@@ -15,10 +15,13 @@ questions = [['How do you handle challenges?','A) Stay hopeful and endure with g
 for question in questions:
   print(question[0])
 
-  print(f"{question[1]}                   {question[2]}")
-  print(f"{question[3]}                   {question[4]}")
-  print(f"{question[5]}                   {question[6]}")
-  print(f"{question[7]}                   ")
+  print(question[1])
+  print(question[2])
+  print(question[3])
+  print(question[4])
+  print(question[5])
+  print(question[6])
+  print(question[7])
 
   ans = input("Choose your option: ").upper()
 
