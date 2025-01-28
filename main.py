@@ -39,17 +39,17 @@ for question in questions:
   else:
     print("Choose between A to G")
 
-  if(c>r or c>b or c>a or c>e or c>s or c>j):
-    print(f"{name} is Cinderella: Focuses on hope, kindness, and resilience.")
-  elif(r>c or r>b or r>a or r>e or r>s or r>j):
-    print(f"{name} is Rapunzel: Creative, adventurous, and curious.")
-  elif(b>c or b>r or b>a or b>e or b>s or b>j):
-    print(f"{name} is Belle: Intellectual and values inner beauty.")
-  elif(a>c or a>r or a>b or a>e or a>s or a>j):
-    print(f"{name} is Aurora: Dreamy, graceful, and calm.")
-  elif(e>c or e>r or e>b or e>a or e>s or e>j):
-    print(f"{name} is Elsa: Self-reflective, independent, and emotional.")
-  elif(s>c or s>r or s>b or s>a or s>e or s>j):
-    print(f"{name} is Snow White: Cheerful, nurturing, and optimistic.")
-  else:
-    print(f"{name} is Jasmine: Bold, independent, and justice-seeking.")
+if(c>r or c>b or c>a or c>e or c>s or c>j):
+  print(f"{name} is Cinderella: Focuses on hope, kindness, and resilience.")
+elif(r>c or r>b or r>a or r>e or r>s or r>j):
+  print(f"{name} is Rapunzel: Creative, adventurous, and curious.")
+elif(b>c or b>r or b>a or b>e or b>s or b>j):
+  print(f"{name} is Belle: Intellectual and values inner beauty.")
+elif(a>c or a>r or a>b or a>e or a>s or a>j):
+  print(f"{name} is Aurora: Dreamy, graceful, and calm.")
+elif(e>c or e>r or e>b or e>a or e>s or e>j):
+  print(f"{name} is Elsa: Self-reflective, independent, and emotional.")
+elif(s>c or s>r or s>b or s>a or s>e or s>j):
+  print(f"{name} is Snow White: Cheerful, nurturing, and optimistic.")
+else:
+  print(f"{name} is Jasmine: Bold, independent, and justice-seeking.")
