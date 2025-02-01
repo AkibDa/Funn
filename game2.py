@@ -160,7 +160,7 @@ def more():
     index = movie_genres.index("Drama")
     print(f"We recommend {movie_names[index]} to {name}")
   elif(H>D and H>AF and H>BD and H>AC):
-    index = movie_genres.index("Horror")
+    index = movie_genres.index("Horror, Sci-Fi")
     print(f"We recommend {movie_names[index]} to {name}")
   elif(AF>D and AF>H and AF>BD and AF>AC):
     index = movie_genres.index("Animation, Family")
