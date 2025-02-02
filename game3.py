@@ -1,7 +1,7 @@
 from questions import questions3
 
 def friends_quiz():
-
+    
     score = 0
     
     print("Welcome to the Friends Quiz! Guess who said the following lines.")
@@ -10,7 +10,9 @@ def friends_quiz():
         print(f"\nQuestion {i}: {quote}")
         user_answer = input("Your answer: ").strip()
         
-        if user_answer.lower() == answer.lower():
+        if user_answer.lower() == "exit" or user_answer.lower() == "quit" or user_answer.lower == "bye":
+            break
+        elif user_answer.lower() == answer.lower():
             print("✅ Correct!")
             score += 1
         else:
