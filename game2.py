@@ -1,3 +1,5 @@
+from questions import questions2, questions_new2
+
 print("Welcome to my Movie Reccomendation App")
 
 name = input("Enter your name: ")
@@ -28,81 +30,7 @@ movie_genres = [
 # for i in range(len(movie_genres)):
 #   print(f"{movie_names[i]} - {movie_genres[i]}")
 
-questions = [
-    "1. What kind of movie do you enjoy the most?\n"
-    "   a) Mind-bending and thought-provoking\n"
-    "   b) Action-packed and thrilling\n"
-    "   c) Emotional and heartwarming\n"
-    "   d) Dark and mysterious\n"
-    "   e) Fantastical and adventurous\n",
-
-    "2. Which setting excites you the most in a movie?\n"
-    "   a) Outer space or futuristic worlds\n"
-    "   b) Urban crime-ridden cities\n"
-    "   c) Historical or real-life events\n"
-    "   d) Psychological mind games\n"
-    "   e) Magical and mythical lands\n",
-
-    "3. How do you like your movie endings?\n"
-    "   a) Open to interpretation\n"
-    "   b) A satisfying revenge or victory\n"
-    "   c) Emotional and touching\n"
-    "   d) Twisted and unexpected\n"
-    "   e) A grand, heroic climax\n",
-
-    "4. Which element is most important in a movie for you?\n"
-    "   a) Thought-provoking concepts\n"
-    "   b) Intense action sequences\n"
-    "   c) Strong character development\n"
-    "   d) Suspense and thrill\n"
-    "   e) World-building and epic journeys\n",
-
-    "5. Which of these best describes your personality?\n"
-    "   a) A deep thinker and problem solver\n"
-    "   b) Bold, energetic, and fearless\n"
-    "   c) Emotional and compassionate\n"
-    "   d) Mysterious and analytical\n"
-    "   e) Dreamer with a love for adventure\n"
-]
-
-questions_new = [
-    "1. Which of these do you enjoy most in a movie?\n"
-    "   a) Laugh-out-loud comedy moments\n"
-    "   b) Spine-chilling horror and suspense\n"
-    "   c) Heartfelt animation with meaningful messages\n"
-    "   d) Real-life stories based on true events\n"
-    "   e) Fast cars, heists, and high-speed chases\n",
-
-    "2. What kind of protagonist do you prefer?\n"
-    "   a) A funny and witty character\n"
-    "   b) Someone trying to survive against all odds\n"
-    "   c) A lovable hero with a big heart\n"
-    "   d) A historical figure or someone from real life\n"
-    "   e) A daring risk-taker who lives on the edge\n",
-
-    "3. How do you want a movie to make you feel?\n"
-    "   a) Entertained and cheerful\n"
-    "   b) On the edge of your seat, scared but excited\n"
-    "   c) Nostalgic and emotional\n"
-    "   d) Inspired by real-life struggles and achievements\n"
-    "   e) Pumped up with adrenaline\n",
-
-    "4. What type of movie setting excites you the most?\n"
-    "   a) A hilarious, everyday situation that goes wrong\n"
-    "   b) An abandoned house or a haunted place\n"
-    "   c) A vibrant and colorful fantasy world\n"
-    "   d) A historical war zone or courtroom drama\n"
-    "   e) A high-stakes city full of action\n",
-
-    "5. Which famous quote best represents your movie taste?\n"
-    "   a) 'Why so serious?'\n"
-    "   b) 'Do you like scary movies?'\n"
-    "   c) 'Just keep swimming.'\n"
-    "   d) 'You can't handle the truth!'\n"
-    "   e) 'I live my life a quarter mile at a time.'\n"
-]
-
-for question in questions:
+for question in questions2:
   print(question)
   ans = input("Choose any option: ").lower()
 
@@ -141,7 +69,7 @@ def more():
   AF = 0
   BD = 0
   AC = 0
-  for question in questions_new:
+  for question in questions_new2:
     print(question)
     ans = input("Choose any option: ").lower()
 
