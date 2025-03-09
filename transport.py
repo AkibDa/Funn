@@ -7,7 +7,7 @@ class Bus:
     self.bus_id = bus_id
     self.route = route 
     self.total_seats = total_seats
-    self.availabe_seats = total_seats
+    self.available_seats = total_seats
     self.fare = fare 
 
   def check_availability(self):
@@ -53,14 +53,14 @@ class TransportSystem:
   def book_ticket(self, bus_id, num_seats):
 
     for bus in self.buses:
-      if bus.bus_id == bus.id:
+      if bus.bus_id == bus_id:
         return bus.book_ticket(num_seats)
     return None
   
   def get_fare_estimate(self, bus_id, num_seats):
 
     for bus in self.buses:
-      if bus.bus_id == bus.id:
+      if bus.bus_id == bus_id:
         return bus.get_fare(num_seats)
     return None
 
