@@ -1,5 +1,3 @@
-import time
-
 class Bus:
 
   def __init__(self, bus_id, route, total_seats, fare):
