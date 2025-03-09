@@ -64,51 +64,51 @@ class TransportSystem:
         return bus.get_fare(num_seats)
     return None
 
-  def main():
+def main():
 
-    system = TransportSystem()
+  system = TransportSystem()
 
-    while True:
+  while True:
 
-      print("\nPublic Transport System")
-      print("1. View Available Routes")
-      print("2. Check Seat Availability")
-      print("3. Book a Ticket")
-      print("4. Get Fare Estimation")
-      print("5. Exit")
+    print("\nPublic Transport System")
+    print("1. View Available Routes")
+    print("2. Check Seat Availability")
+    print("3. Book a Ticket")
+    print("4. Get Fare Estimation")
+    print("5. Exit")
 
-      choice = input("Enter your choice: ")
+    choice = input("Enter your choice: ")
 
-      if choice == '1':
-        system.view_routes()
-      elif choice == '2':
-        bus_id = int(input("Enter Bus ID: "))
-        seats = system.check_seat_availability(bus_id)
-        if seats is not None:
-          print(f"Available seats: {seats}")
-        else:
-          print("Invalid Bus ID!")
-      elif choice == '3':
-        bus_id = int(input("Enter Bus ID: "))
-        num_seats = int(input("Enter number of seats: "))
-        success = system.book_ticket(bus_id, num_seats)
-        if success:
-          print(f"{num_seats} seat(s) booked successfully!")
-        else:
-          print("Booking failed. Not enough seats or invalid Bus ID.")
-      elif choice == '4':
-        bus_id = int(input("Enter Bus ID: "))
-        num_seats = int(input("Enter number of seats: "))
-        fare = system.get_fare_estimate(bus_id, num_seats)
-        if fare is not None:
-          print(f"Estimate Fare: Rs{fare}")
-        else:
-          print("Invalid Bus ID!")
-      elif choice == '5':
-        print("Exiting... Safe travels!")
-        break
+    if choice == '1':
+      system.view_routes()
+    elif choice == '2':
+      bus_id = int(input("Enter Bus ID: "))
+      seats = system.check_seat_availability(bus_id)
+      if seats is not None:
+        print(f"Available seats: {seats}")
       else:
-        print("Invalid choice! Please try again.")
+        print("Invalid Bus ID!")
+    elif choice == '3':
+      bus_id = int(input("Enter Bus ID: "))
+      num_seats = int(input("Enter number of seats: "))
+      success = system.book_ticket(bus_id, num_seats)
+      if success:
+        print(f"{num_seats} seat(s) booked successfully!")
+      else:
+        print("Booking failed. Not enough seats or invalid Bus ID.")
+    elif choice == '4':
+      bus_id = int(input("Enter Bus ID: "))
+      num_seats = int(input("Enter number of seats: "))
+      fare = system.get_fare_estimate(bus_id, num_seats)
+      if fare is not None:
+        print(f"Estimate Fare: Rs{fare}")
+      else:
+        print("Invalid Bus ID!")
+    elif choice == '5':
+      print("Exiting... Safe travels!")
+      break
+    else:
+      print("Invalid choice! Please try again.")
 
 if __name__ == "__main__":
   main()
