@@ -54,7 +54,7 @@ class TransportSystem:
 
     for bus in self.buses:
       if bus.bus_id == bus_id:
-        return bus.book_ticket(num_seats)
+        return bus.book_tickets(num_seats)
     return None
   
   def get_fare_estimate(self, bus_id, num_seats):
@@ -91,7 +91,7 @@ def main():
     elif choice == '3':
       bus_id = int(input("Enter Bus ID: "))
       num_seats = int(input("Enter number of seats: "))
-      success = system.book_tickets(bus_id, num_seats)
+      success = system.book_ticket(bus_id, num_seats)
       if success:
         print(f"{num_seats} seat(s) booked successfully!")
       else:
